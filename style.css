@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap');
 
 body {
     background: #B7D3F2;
     color: #B7D3F2;
+    text-align: center;
     font-family: "Bitcount Prop Double", system-ui;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -21,9 +22,22 @@ body {
 
 
 .img-circle {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 50%;
+  object-position: center;
 }
 
+.container {
+  margin: 40px 100px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(245, 238, 241);
+  border: 1px solid rgb(94, 88, 89);}
 .text-center {
   text-align: center;
 }
@@ -36,31 +50,157 @@ body {
 
 .list-inline > li {
   display: inline-block;
-  padding: 0px 20px;
+  list-style: none;
+  margin: 0 10px;
 }
 
 .list-inline {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 
 @media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
   }
 }
 
 @media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
   }
 }
 
 @media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+} */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* body {
+  background: #B7D3F2;
+  color: #B7D3F2;
+  text-align: center;
+  font-family: "Bitcount Prop Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #6F8F72;
+  font-family: "Bitcount Prop Double", system-ui;
+}
+.container {
+  background-color: #6F8F72;
+  padding: 40px;
+  margin: 40px auto;
+  border: 1px solid #65524D;
+  border-radius: 10px;
+  width: 80%;
+}
+.card {
+  background-color: #dcacac;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+ul {
+  size-adjust: 15px;
+  margin: 0;
+  padding: 5;
+}
+
+
+.img-circle {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-white {
+  background: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
+
+.list-inline {
+  list-style: none;
+  size: 15px;
+  padding-left: 0;
+  margin: 16px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition:
+    background-color 0.3s,
+    transform 0.2s,
+    box-shadow 0.3s;
+}
+
+.button:hover {
+  background-color: #2d2121;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
   .container {
     width: 300px;
   }
